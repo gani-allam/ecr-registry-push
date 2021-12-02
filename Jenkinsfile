@@ -10,7 +10,8 @@ pipeline {
     stage('moving to the caliculation folder') {
        steps {
           sh 'ls -l'
-          sh 'cd scbv4-casestudy/scbv4-casestudy/source/ calculation-offer-service'
+          sh 'cd source/ calculation-offer-service'
+          sh 'ls -l'
         }
     }
   }
