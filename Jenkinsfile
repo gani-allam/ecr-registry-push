@@ -30,4 +30,5 @@ pipeline {
     stage('Pushing Image'){
       sh 'docker push 142198642907.dkr.ecr.ap-south-1.amazonaws.com/ganesh-jenkins-calculation-service:latest'
     }
+  }
 }
