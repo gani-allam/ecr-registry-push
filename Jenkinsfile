@@ -8,22 +8,10 @@ pipeline {
     }
 
     stage('moving to the caliculation folder') {
-      parallel {
-        stage('moving to the caliculation folder') {
-          steps {
-            sh 'cd scbv4-casestudy/scbv4-casestudy/source/ calculation-offer-service'
-            sh 'ls -l'
-          }
+       steps {
+          sh 'ls -l'
+          sh 'cd scbv4-casestudy/scbv4-casestudy/source/ calculation-offer-service'
         }
-
-        stage('getting folder structure') {
-          steps {
-            sh 'ls -l'
-          }
-        }
-
-      }
     }
-
   }
 }
